@@ -1,0 +1,9 @@
+[submodule "wp-content/themes/largo"]
+	path = wp-content/themes/largo
+	url = https://github.com/INN/largo.git
+[submodule "tools"]
+	path = tools
+	url = https://github.com/INN/deploy-tools.git
+[submodule "wp-content/themes/wisconsinwatch"]
+	path = wp-content/themes/wisconsinwatch
+	url = https://bitbucket.org/cornershopcreative/wisconsinwatch.git
