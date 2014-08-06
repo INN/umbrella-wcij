@@ -1,3 +1,5 @@
+import os
+
 from tools.fablib import *
 
 """
@@ -5,6 +7,10 @@ Base configuration
 """
 env.project_name = 'wcij'
 env.file_path = '.'
+
+env.hipchat_token = os.environ['HIPCHAT_DEPLOYMENT_NOTIFICATION_TOKEN']
+env.hipchat_room_id = os.environ['HIPCHAT_DEPLOYMENT_NOTIFICATION_ROOM_ID']
+
 
 # Environments
 def production():
@@ -26,6 +32,6 @@ def staging():
     env.password = os.environ['WCIJ_STAGING_SFTP_PASSWORD']
 
 try:
-    from local_fabfile import  *
+    from local_fabfile import *
 except ImportError:
     pass
