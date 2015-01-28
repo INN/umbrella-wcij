@@ -6,4 +6,4 @@
 	url = https://github.com/INN/deploy-tools.git
 [submodule "wp-content/themes/wisconsinwatch"]
 	path = wp-content/themes/wisconsinwatch
-	url = https://bitbucket.org/cornershopcreative/wisconsinwatch.git
+	url = https://bitbucket.org/projectlargo/wisconsinwatch.git
