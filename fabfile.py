@@ -2,6 +2,8 @@ import os
 
 from tools.fablib import *
 
+from fabric.api import task
+
 """
 Base configuration
 """
@@ -15,6 +17,7 @@ except KeyError:
     pass
 
 # Environments
+@task
 def production():
     """
     Work on production environment
@@ -24,6 +27,7 @@ def production():
     env.user = os.environ['WCIJ_PRODUCTION_SFTP_USER']
     env.password = os.environ['WCIJ_PRODUCTION_SFTP_PASSWORD']
 
+@task
 def staging():
     """
     Work on staging environment
