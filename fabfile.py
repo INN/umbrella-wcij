@@ -26,6 +26,7 @@ def production():
     env.hosts = [os.environ['WCIJ_PRODUCTION_SFTP_HOST'], ]
     env.user = os.environ['WCIJ_PRODUCTION_SFTP_USER']
     env.password = os.environ['WCIJ_PRODUCTION_SFTP_PASSWORD']
+    env.port = 2222
 
 @task
 def staging():
@@ -36,6 +37,7 @@ def staging():
     env.hosts = [os.environ['WCIJ_STAGING_SFTP_HOST'], ]
     env.user = os.environ['WCIJ_STAGING_SFTP_USER']
     env.password = os.environ['WCIJ_STAGING_SFTP_PASSWORD']
+    env.port = 2222
 
 try:
     from local_fabfile import *
