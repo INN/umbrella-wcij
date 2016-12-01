@@ -15,7 +15,7 @@ env.sftp_deploy = True
 try:
     env.domain
 except AttributeError:
-    env.domain = 'vagrant.dev'
+    env.domain = 'wcij.dev'
 
 try:
     env.hipchat_token = os.environ['HIPCHAT_DEPLOYMENT_NOTIFICATION_TOKEN']
