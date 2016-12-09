@@ -7,3 +7,6 @@
 [submodule "wp-content/themes/wisconsinwatch"]
 	path = wp-content/themes/wisconsinwatch
 	url = https://bitbucket.org/projectlargo/wisconsinwatch.git
+[submodule "wp-content/plugins/client-hosting-manager"]
+	path = wp-content/plugins/client-hosting-manager
+	url = git@github.com:INN/client-hosting-manager.git
