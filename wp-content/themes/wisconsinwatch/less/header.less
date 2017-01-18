@@ -1,0 +1,82 @@
+#site-header {
+  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  position: relative;
+  .home & {
+    margin-top: 1px;
+  }
+  margin-bottom: 0;
+
+  img.logo {
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 0 5px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  p {
+    display: block;
+    font-size: 15px;
+    color: #7d7a7c;
+    margin: -14px 0 12px 28px;
+  }
+  h3 {
+    font-size: 13px;
+    font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #7EB4CF;
+    text-align: center;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+  }
+  h3 span {
+    font-weight: bold;
+  }
+  .newsletter-signup {
+    width: 262px;
+    color: #666;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    margin-left: 20px;
+    z-index: 999;
+
+    .error {
+      color: #666;
+      font-size: 12px;
+      display: none;
+    }
+    .city,
+    .date {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+    .city { float: right; }
+    .date { float: left; }
+    form {
+      clear: both;
+      background: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+    form button,
+    form input {
+      margin: 0 0 8px 0;
+      font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+    }
+    form input[type="text"],
+    form input[type="email"]{ width: 226px; }
+    form label {
+      color: #666;
+      font-size: 16px;
+    }
+    .first_name,
+    .last_name,
+    .submit {
+      display: none;
+    }
+  }
+}
