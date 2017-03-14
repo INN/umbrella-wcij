@@ -19,7 +19,8 @@ require_once( get_template_directory() . '/largo-apis.php' );
  */
 $includes = array(
 	'/inc/custom-post-types.php',
-	'/inc/metaboxes.php'
+	'/inc/metaboxes.php',
+	'/inc/donation-form.php'
 );
 
 // Perform load
