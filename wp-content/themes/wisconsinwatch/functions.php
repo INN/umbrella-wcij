@@ -142,14 +142,13 @@ function wcij_largo_header_after_largo_header() {
 		<span class="date"><?php echo date('F j, Y', time()); ?></span>
 		<span class="city">Madison, Wisconsin</span>
 		<form action="http://wisconsinwatch.us4.list-manage.com/subscribe/post?u=91b0dfab9d494b66c92b76777&amp;id=d7ab6931a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			<label>Subscribe to our free newsletter</label>
+			<label>Subscribe to our free newsletters</label>
 			<fieldset>
 				<input required type="email" value="" name="EMAIL" class="required email_address" id="mce-EMAIL" placeholder="Email address">
 				<input required type="text" value="" name="FNAME" class="required first_name toggleable" id="mce-FNAME" placeholder="First name">
 				<input required type="text" value="" name="LNAME" class="required last_name toggleable" id="mce-LNAME" placeholder="Last name">
 				<div id="interestTable" class="toggleable">
 					<div id="mergeRow-100-1" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
-						<label>Newsletters</label>
 						<div class="field-group groups">
 							<ul class="interestgroup_field checkbox-group">
 								<li class="!margin-bottom--lv2">
@@ -167,7 +166,7 @@ function wcij_largo_header_after_largo_header() {
 									<li class="!margin-bottom--lv2">
 										<label class="checkbox" for="group_2">
 											<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_2" name="group[1][2]" value="1"  class="av-checkbox">
-											<span>New Story Alerts — Be the first to know when we&#039;ve published a new major report.</span>
+											<span>New story alerts — Be the first to know when we&#039;ve published a new major report.</span>
 										</label>
 									</li>
 							</ul>
