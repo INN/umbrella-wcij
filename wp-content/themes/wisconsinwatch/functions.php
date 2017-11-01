@@ -145,13 +145,13 @@ function wcij_largo_header_after_largo_header() {
 			<label>Subscribe to our free newsletter</label>
 			<fieldset>
 				<input required type="email" value="" name="EMAIL" class="required email_address" id="mce-EMAIL" placeholder="Email address">
-				<input required type="text" value="" name="FNAME" class="required first_name" id="mce-FNAME" placeholder="First name">
-				<input required type="text" value="" name="LNAME" class="required last_name" id="mce-LNAME" placeholder="Last name">
-				<div id="interestTable">
+				<input required type="text" value="" name="FNAME" class="required first_name toggleable" id="mce-FNAME" placeholder="First name">
+				<input required type="text" value="" name="LNAME" class="required last_name toggleable" id="mce-LNAME" placeholder="Last name">
+				<div id="interestTable" class="toggleable">
 					<div id="mergeRow-100-1" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
-                		<label>Newsletters</label>
-                		<div class="field-group groups">
-                    		<ul class="interestgroup_field checkbox-group">
+						<label>Newsletters</label>
+						<div class="field-group groups">
+							<ul class="interestgroup_field checkbox-group">
 								<li class="!margin-bottom--lv2">
 									<label class="checkbox" for="group_4">
 										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_4" name="group[1][4]" value="1"  class="av-checkbox">
@@ -172,13 +172,13 @@ function wcij_largo_header_after_largo_header() {
 									</li>
 							</ul>
 						</div>
-            		</div>
-            	</div>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn submit">
+					</div>
+				</div>
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn submit toggleable">
 				<input type="hidden" name="ht" value="3326db68e22761b5dc69327195dc51b3e58fd2e0:MTUwODk3MTU5NS45NjUz">
 				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 				<div style="position: absolute; left: -5000px;"><input type="text" name="b_91b0dfab9d494b66c92b76777_d7ab6931a6" tabindex="-1" value=""></div>
-				<div class="error"></div>
+				<div class="error toggleable"></div>
 			</fieldset>
 		</form>
 	</div>

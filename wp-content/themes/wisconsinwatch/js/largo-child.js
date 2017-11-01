@@ -36,13 +36,13 @@ jQuery(document).ready(function($) {
 
 	// Newsletter signup form interaction
 	$('#site-header .newsletter-signup .email_address').focus(function() {
-		$(this).siblings('.first_name, .last_name, .submit').show();
+		$(this).siblings('.toggleable').show();
 	});
 
 	$(document).mouseup(function(e) {
 		var container = $("#site-header .newsletter-signup");
 		if (!container.is(e.target) && container.has(e.target).length === 0)
-			container.find('.first_name, .last_name, .submit, .error').hide();
+			container.find('.toggleable').hide();
 	});
 
 	$('#site-header .newsletter-signup form').submit(function() {
@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
 		if (!valid)
 			return false;
 		else {
-			$("#site-header .newsletter-signup").find('.first_name, .last_name, .submit, .error').hide();
+			$("#site-header .newsletter-signup").find('.toggleable').hide();
 			$('#site-header .newsletter-signup input.submit').attr({ disabled: 'disabled', value: 'Submitted' });
 		}
 	});
