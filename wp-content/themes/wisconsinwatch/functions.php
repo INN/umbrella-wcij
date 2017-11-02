@@ -34,7 +34,7 @@ foreach ( $includes as $include ) {
 function child_stylesheet() {
 	wp_dequeue_style( 'largo-child-styles' );
 	$suffix = ( LARGO_DEBUG )? '' : '.min';
-	wp_enqueue_style( 'mstoday', get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css' );
+	wp_enqueue_style( 'wcij', get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css' );
 }
 add_action( 'wp_enqueue_scripts', 'child_stylesheet', 20 );
 
@@ -69,7 +69,12 @@ add_filter( 'widget_text', array( $wp_embed, 'autoembed'), 8 );
  * Enqueue JS
  */
 function largo_child_enqueue() {
-	wp_enqueue_script( 'largo-child', get_stylesheet_directory_uri() . '/js/largo-child.js', array('jquery') );
+	wp_enqueue_script(
+		'largo-child',
+		get_stylesheet_directory_uri() . '/js/largo-child.js',
+		array('jquery'),
+		'20171102'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'largo_child_enqueue' );
 
