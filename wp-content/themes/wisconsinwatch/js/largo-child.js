@@ -34,17 +34,19 @@ jQuery(document).ready(function($) {
 
 	}
 
-	// Newsletter signup form interaction
+	// Newsletter signup form click interaction
 	$('#site-header .newsletter-signup .email_address').focus(function() {
 		$(this).siblings('.toggleable').show();
 	});
 
+	// Newsletter signup form: hide on unclick
 	$(document).mouseup(function(e) {
 		var container = $("#site-header .newsletter-signup");
 		if (!container.is(e.target) && container.has(e.target).length === 0)
 			container.find('.toggleable').hide();
 	});
 
+	// Newsletter signup form client-side validation
 	$('#site-header .newsletter-signup form').submit(function() {
 		var valid = true;
 		$('#site-header .newsletter-signup .error').hide();
