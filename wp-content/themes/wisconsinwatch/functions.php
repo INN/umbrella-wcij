@@ -121,7 +121,7 @@ add_action( 'wp_head', 'wcij_mip_metrics_tag' );
 function wcij_largo_header_before_largo_header() {
 	if ( is_front_page() || is_home() ) {
 		?>
-			<h3>Protect the Vulnerable <span>&#183;</span> Expose Wrongdoing <span>&#183;</span> Seek Solutions</h3>
+			<h3>Protect the Vulnerable <span>&#183;</span> Expose Wrongdoing <span>&#183;</span> Explore Solutions</h3>
 		<?php
 	}
 }
