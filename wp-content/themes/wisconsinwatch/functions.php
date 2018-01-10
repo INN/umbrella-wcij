@@ -146,7 +146,7 @@ function wcij_largo_header_after_largo_header() {
 	<div class="newsletter-signup">
 		<span class="date"><?php echo date('F j, Y', time()); ?></span>
 		<span class="city">Madison, Wisconsin</span>
-		<form action="http://wisconsinwatch.us4.list-manage.com/subscribe/post?u=91b0dfab9d494b66c92b76777&amp;id=d7ab6931a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<form action="https://wisconsinwatch.us4.list-manage.com/subscribe/post?u=91b0dfab9d494b66c92b76777&amp;id=d7ab6931a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			<label>Subscribe to our free newsletters</label>
 			<fieldset>
 				<input required type="email" value="" name="EMAIL" class="required email_address" id="mce-EMAIL" placeholder="Email address">
