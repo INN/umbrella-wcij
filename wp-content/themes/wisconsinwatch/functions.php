@@ -157,23 +157,23 @@ function wcij_largo_header_after_largo_header() {
 						<div class="field-group groups">
 							<ul class="interestgroup_field checkbox-group">
 								<li class="!margin-bottom--lv2">
-									<label class="checkbox" for="group_4">
-										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_4" name="group[1][4]" value="1"  class="av-checkbox">
-										<span>WisconsinWeekly — A roundup of the Wisconsin news you need to know.</span>
-									</label>
-								</li>
-								<li class="!margin-bottom--lv2">
 									<label class="checkbox" for="group_1">
 										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_1" name="group[1][1]" value="1"  class="av-checkbox">
 										<span>Updates from WCIJ — Go behind the scenes with Executive Director Andy Hall.</span>
 									</label>
 								</li>
-									<li class="!margin-bottom--lv2">
-										<label class="checkbox" for="group_2">
-											<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_2" name="group[1][2]" value="1"  class="av-checkbox">
-											<span>New story alerts — Be the first to know when we&#039;ve published a new major report.</span>
-										</label>
-									</li>
+								<li class="!margin-bottom--lv2">
+									<label class="checkbox" for="group_2">
+										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_2" name="group[1][2]" value="1"  class="av-checkbox">
+										<span>New story alerts — Be the first to know when we&#039;ve published a new major report.</span>
+									</label>
+								</li>
+								<li class="!margin-bottom--lv2">
+									<label class="checkbox" for="group_4">
+										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_4" name="group[1][4]" value="1"  class="av-checkbox">
+										<span>WisconsinWeekly — A roundup of the Wisconsin news you need to know.</span>
+									</label>
+								</li>
 							</ul>
 						</div>
 					</div>
