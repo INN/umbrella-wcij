@@ -34,7 +34,7 @@ foreach ( $includes as $include ) {
 function child_stylesheet() {
 	wp_dequeue_style( 'largo-child-styles' );
 	$suffix = ( LARGO_DEBUG )? '' : '.min';
-	wp_enqueue_style( 'mstoday', get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css' );
+	wp_enqueue_style( 'wcij', get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css' );
 }
 add_action( 'wp_enqueue_scripts', 'child_stylesheet', 20 );
 
@@ -69,7 +69,12 @@ add_filter( 'widget_text', array( $wp_embed, 'autoembed'), 8 );
  * Enqueue JS
  */
 function largo_child_enqueue() {
-	wp_enqueue_script( 'largo-child', get_stylesheet_directory_uri() . '/js/largo-child.js', array('jquery') );
+	wp_enqueue_script(
+		'largo-child',
+		get_stylesheet_directory_uri() . '/js/largo-child.js',
+		array('jquery'),
+		'20171102'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'largo_child_enqueue' );
 
@@ -141,16 +146,43 @@ function wcij_largo_header_after_largo_header() {
 	<div class="newsletter-signup">
 		<span class="date"><?php echo date('F j, Y', time()); ?></span>
 		<span class="city">Madison, Wisconsin</span>
-		<form action="http://wisconsinwatch.us4.list-manage.com/subscribe/post?u=91b0dfab9d494b66c92b76777&amp;id=d7ab6931a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			<label>Subscribe to our free newsletter</label>
+		<form action="https://wisconsinwatch.us4.list-manage.com/subscribe/post?u=91b0dfab9d494b66c92b76777&amp;id=d7ab6931a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<label>Subscribe to our free newsletters</label>
 			<fieldset>
 				<input required type="email" value="" name="EMAIL" class="required email_address" id="mce-EMAIL" placeholder="Email address">
-				<input required type="text" value="" name="FNAME" class="required first_name" id="mce-FNAME" placeholder="First name">
-				<input required type="text" value="" name="LNAME" class="required last_name" id="mce-LNAME" placeholder="Last name">
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn submit">
+				<input required type="text" value="" name="FNAME" class="required first_name toggleable" id="mce-FNAME" placeholder="First name">
+				<input required type="text" value="" name="LNAME" class="required last_name toggleable" id="mce-LNAME" placeholder="Last name">
+				<div id="interestTable" class="toggleable">
+					<div id="mergeRow-100-1" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
+						<div class="field-group groups">
+							<ul class="interestgroup_field checkbox-group">
+								<li class="!margin-bottom--lv2">
+									<label class="checkbox" for="group_1">
+										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_1" name="group[1][1]" value="1"  class="av-checkbox">
+										<span>Updates from WCIJ — Go behind the scenes with Executive Director Andy Hall.</span>
+									</label>
+								</li>
+								<li class="!margin-bottom--lv2">
+									<label class="checkbox" for="group_2">
+										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_2" name="group[1][2]" value="1"  class="av-checkbox">
+										<span>New story alerts — Be the first to know when we&#039;ve published a new major report.</span>
+									</label>
+								</li>
+								<li class="!margin-bottom--lv2">
+									<label class="checkbox" for="group_4">
+										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_4" name="group[1][4]" value="1"  class="av-checkbox">
+										<span>WisconsinWeekly — A roundup of the Wisconsin news you need to know.</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn submit toggleable">
+				<input type="hidden" name="ht" value="3326db68e22761b5dc69327195dc51b3e58fd2e0:MTUwODk3MTU5NS45NjUz">
 				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 				<div style="position: absolute; left: -5000px;"><input type="text" name="b_91b0dfab9d494b66c92b76777_d7ab6931a6" tabindex="-1" value=""></div>
-				<div class="error"></div>
+				<div class="error toggleable"></div>
 			</fieldset>
 		</form>
 	</div>
