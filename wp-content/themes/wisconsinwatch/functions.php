@@ -34,7 +34,12 @@ foreach ( $includes as $include ) {
 function child_stylesheet() {
 	wp_dequeue_style( 'largo-child-styles' );
 	$suffix = ( LARGO_DEBUG )? '' : '.min';
-	wp_enqueue_style( 'wcij', get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css' );
+	wp_enqueue_style(
+		'wcij',
+		get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css',
+		null,
+		'2018-02-07'
+	);
 }
 add_action( 'wp_enqueue_scripts', 'child_stylesheet', 20 );
 
@@ -73,7 +78,7 @@ function largo_child_enqueue() {
 		'largo-child',
 		get_stylesheet_directory_uri() . '/js/largo-child.js',
 		array('jquery'),
-		'20171102'
+		'20180207'
 	);
 }
 add_action( 'wp_enqueue_scripts', 'largo_child_enqueue' );
