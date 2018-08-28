@@ -184,9 +184,6 @@ function wcij_largo_header_after_largo_header() {
 					</div>
 				</div>
 				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn submit toggleable">
-				<input type="hidden" name="ht" value="3326db68e22761b5dc69327195dc51b3e58fd2e0:MTUwODk3MTU5NS45NjUz">
-				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				<div style="position: absolute; left: -5000px;"><input type="text" name="b_91b0dfab9d494b66c92b76777_d7ab6931a6" tabindex="-1" value=""></div>
 				<div class="error toggleable"></div>
 			</fieldset>
 		</form>
