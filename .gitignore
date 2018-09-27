@@ -75,8 +75,8 @@ wp-content/debug.log
 /wp-content/Icon
 /wp-content/plugins/*
 
-# 
-
+# but do version the special version of the Trust Project plugin
+!wp-content/plugins/trust-indicators
 
 # large/disallowed file types
 # a CDN should be used for these
