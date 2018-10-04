@@ -38,7 +38,7 @@ function child_stylesheet() {
 		'wcij',
 		get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css',
 		null,
-		'2018-10-04'
+		filemtime( get_stylesheet_directory() . '/css/child.css' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'child_stylesheet', 20 );
