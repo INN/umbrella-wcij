@@ -33,7 +33,7 @@ def production():
     env.hosts = [os.environ['WCIJ_PRODUCTION_SFTP_HOST'], ]
     env.path = os.environ['WCIJ_PRODUCTION_SFTP_PATH']
     env.user = os.environ['FLYWHEEL_SFTP_USER']
-    env.password = os.environ['FLYWHEEL_SFTP_PASSWORD']
+    env.password = os.environ['FLYWHEEL_SFTP_PASS']
     env.domain = 'www.wisconsinwatch.org'
     env.port = 22
 
@@ -46,7 +46,7 @@ def staging():
     env.hosts = [os.environ['WCIJ_STAGING_SFTP_HOST'], ]
     env.path = os.environ['WCIJ_STAGING_SFTP_PATH']
     env.user = os.environ['FLYWHEEL_SFTP_USER']
-    env.password = os.environ['FLYWHEEL_SFTP_PASSWORD']
+    env.password = os.environ['FLYWHEEL_SFTP_PASS']
     env.domain = 'staging.wisconsinwatch.flywheelsites.com'
     env.port = 22
 
