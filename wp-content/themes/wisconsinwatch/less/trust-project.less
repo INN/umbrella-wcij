@@ -1,0 +1,55 @@
+.trust-project-logo {
+	margin-bottom:14px;
+}
+
+.trust-indicators-button {
+	font-family:@sans;
+	width:100%;
+	display:block;
+	margin-bottom:12px;
+	letter-spacing: .035em;
+}
+
+.trust-indicators-button-container:first-of-type::before {
+	width:100%;
+	display:block;
+}
+
+.trust-indicators-modal-content {
+	* {
+		font-family:@sans;
+	}
+
+	h3 {
+		font-size:16px;
+		text-transform:uppercase;
+		font-weight:700;
+		margin-bottom:8px;
+		padding-bottom:3px;
+		border-bottom: 1px solid #555;
+	}
+
+	h4 {
+		color: #999;
+    	text-transform: uppercase;
+    	margin: 24px 0 4px;
+    	font-size: 15px;
+    	letter-spacing: .035em;
+	}
+
+	p {
+		font-size:14.4px;
+		letter-spacing: .035em;
+		margin-bottom: 8px;
+	}
+}
+
+div[data-overlay=policies] {
+	.trust-indicators-modal-wrapper {
+		.trust-indicators-modal-content {
+			p, hr, h4 {
+				display:none;
+			}
+		}
+	}
+}
