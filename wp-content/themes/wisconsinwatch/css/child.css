@@ -120,9 +120,6 @@ h1.page-title {
   font-size: 60px;
   font-weight: 500;
 }
-.single-post .byline .edit-link:before {
-  content: " | ";
-}
 body.normal.single-post .hero,
 body.normal.page .hero {
   background-color: #fff;
@@ -1158,6 +1155,15 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
 div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-modal-content hr,
 div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-modal-content h4 {
   display: none;
+}
+/*
+ * styles for bylines
+ */
+.byline .avatar {
+  display: none;
+}
+.single-post .byline .edit-link:before {
+  content: " | ";
 }
 iframe {
   max-width: 100% !important;
