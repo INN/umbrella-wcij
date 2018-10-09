@@ -15,18 +15,27 @@ if ( !defined( 'INN_HOSTED' ) ) {
 require_once( get_template_directory() . '/largo-apis.php' );
 
 /**
- * Misc includes
+ * include child theme function files
+ *
+ * @link https://github.com/INN/largo/issues/1494
  */
-$includes = array(
-	'/inc/custom-post-types.php',
-	'/inc/metaboxes.php',
-	'/inc/donation-form.php'
-);
+function wcij_includes() {
+	$includes = array(
+		'/inc/custom-post-types.php',
+		'/inc/metaboxes.php',
+		'/inc/donation-form.php',
+		'/inc/class-wcij-byline.php',
+		'/inc/post-tags.php',
+	);
 
-// Perform load
-foreach ( $includes as $include ) {
-	require_once( get_stylesheet_directory() . $include );
+	// Perform load
+	foreach ( $includes as $include ) {
+		if ( 0 === validate_file( get_stylesheet_directory() . $include ) ) {
+			require_once( get_stylesheet_directory() . $include );
+		}
+	}
 }
+add_action( 'after_setup_theme', 'wcij_includes', 10 ); // must run after function Largo() which runs with priority 10
 
 /**
  * Include compiled style.css
