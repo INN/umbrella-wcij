@@ -123,6 +123,7 @@ h1.page-title {
 body.normal.single-post .hero,
 body.normal.page .hero {
   background-color: #fff;
+  margin-left: 0;
 }
 .single-post .hero p.wp-media-credit {
   float: none;
@@ -131,39 +132,6 @@ body.normal.page .hero {
 }
 .single-post article.post .sep {
   display: none;
-}
-.single-post .sidebar2 {
-  float: right;
-  margin: 6px -15% 12px 20px;
-  max-width: 200px;
-}
-.single-post .sidebar2 .item {
-  margin-bottom: 24px;
-}
-.single-post .sidebar2 h5 {
-  color: #999;
-  text-transform: uppercase;
-  margin-bottom: 4px;
-  font-size: 15px;
-}
-.single-post .sidebar2 img.alignleft {
-  margin-left: 0;
-}
-.single-post .sidebar2 img.alignright {
-  margin-right: 0;
-}
-.single-post .sidebar2 h3 {
-  font-size: 21px;
-  margin-bottom: 4px;
-}
-.single-post .sidebar2 p {
-  font-size: 15px;
-  margin-bottom: 8px;
-}
-.single-post .sidebar2 ul li,
-.single-post .sidebar2 ol li {
-  font-size: 15px;
-  margin-bottom: 6px;
 }
 .single-post h2.subtitle {
   font-size: 21px;
@@ -568,7 +536,7 @@ article img.attachment-post-thumbnail {
 @media only screen and (max-width: 940px) {
   /* #sticky-nav .nav-shelf .site-name { display: none; } */
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 980px) {
   .single-post .entry-content .alignright,
   .single-post .entry-content .align-right,
   .single-post .entry-content .right {
@@ -646,10 +614,6 @@ article img.attachment-post-thumbnail {
     width: 100%;
     float: none;
     clear: both;
-  }
-  .single-post .sidebar2 {
-    margin-right: 0;
-    max-width: 40%;
   }
   h1.entry-title {
     font-size: 38px;
@@ -771,27 +735,6 @@ article img.attachment-post-thumbnail {
     float: left;
     text-align: left;
   }
-  .single-post .sidebar2 {
-    max-width: 100%;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 10px 0;
-    padding: 24px 0 12px 0;
-  }
-  .single-post .sidebar2 .item {
-    margin: 0 0 12px 0;
-  }
-  .single-post .sidebar2 .item h3 {
-    font-size: 16px;
-  }
-  .single-post .entry-content .module.image {
-    max-width: 100%;
-    float: none;
-    margin: 10px 0;
-    padding: 12px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
   .largo-related-posts .related h4 {
     font-size: 22px;
     line-height: 27px;
@@ -799,11 +742,6 @@ article img.attachment-post-thumbnail {
   }
   .largo-related-posts .related .byline {
     clear: both;
-  }
-}
-@media print {
-  .single-post .sidebar2 {
-    display: none;
   }
 }
 /**
@@ -1164,6 +1102,81 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
 }
 .single-post .byline .edit-link:before {
   content: " | ";
+}
+/*
+ * Custom sidebar in post content
+ */
+.single-post .sidebar2 {
+  float: right;
+  margin: 6px -15% 12px 20px;
+  max-width: 200px;
+}
+.single-post .sidebar2 .item {
+  margin-bottom: 24px;
+}
+.single-post .sidebar2 h5 {
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.single-post .sidebar2 img.alignleft {
+  margin-left: 0;
+}
+.single-post .sidebar2 img.alignright {
+  margin-right: 0;
+}
+.single-post .sidebar2 h3 {
+  font-size: 21px;
+  margin-bottom: 4px;
+}
+.single-post .sidebar2 p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.single-post .sidebar2 ul li,
+.single-post .sidebar2 ol li {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+@media only screen and (max-width: 979px) {
+  .single-post .sidebar2 {
+    margin: 6px -6% 12px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single-post .sidebar2 {
+    margin-right: 0;
+    max-width: 40%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .single-post .sidebar2 {
+    max-width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 24px 0 12px 0;
+  }
+  .single-post .sidebar2 .item {
+    margin: 0 0 12px 0;
+  }
+  .single-post .sidebar2 .item h3 {
+    font-size: 16px;
+  }
+  .single-post .sidebar2 .module.image {
+    max-width: 100%;
+    float: none;
+    margin: 10px 0;
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+}
+@media print {
+  .single-post .sidebar2 {
+    display: none;
+  }
 }
 iframe {
   max-width: 100% !important;
