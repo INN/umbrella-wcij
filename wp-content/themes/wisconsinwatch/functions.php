@@ -24,8 +24,6 @@ function wcij_includes() {
 		'/inc/custom-post-types.php',
 		'/inc/metaboxes.php',
 		'/inc/donation-form.php',
-		'/inc/class-wcij-byline.php',
-		'/inc/post-tags.php',
 	);
 
 	// Perform load
