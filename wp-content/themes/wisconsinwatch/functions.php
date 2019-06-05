@@ -45,7 +45,7 @@ function child_stylesheet() {
 		'wcij',
 		get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css',
 		null,
-		filemtime( get_stylesheet_directory() . '/css/child.css' )
+		filemtime( get_stylesheet_directory() . '/css/child' . $suffix . '.css' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'child_stylesheet', 20 );
