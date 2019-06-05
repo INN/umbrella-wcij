@@ -6,12 +6,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'minion-pro', Georgia, serif;
   font-weight: 600;
 }
-a {
-  color: #0065a4;
-}
-a:hover {
-  color: #729eca;
-}
 h5.top-tag,
 h5.top-date,
 .sidebar2 h5,
@@ -33,7 +27,7 @@ p.wp-media-credit,
 .widget p,
 .widget ul,
 .single-post .sidebar2 {
-  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  font-family: @sans;
   letter-spacing: 0.035em;
 }
 #dark-top {
@@ -43,38 +37,11 @@ h5.top-tag,
 h5.top-date {
   font-weight: 400;
 }
-h5.top-date {
-  font-style: italic;
-  color: #777;
-}
 .global-nav .nav-right .org-logo {
   margin-right: 0;
 }
-#main-nav {
-  margin-bottom: 0;
-}
-#main-nav .navbar-inner {
-  background-color: #fff;
-  padding-left: 0;
-  border-top: 2px solid #aaa;
-  border-bottom: 1px solid #aaa;
-}
-#main-nav li > a {
-  color: #0065a4;
-}
-#main-nav .caret:before {
-  border-top: 6px solid #0065a4;
-}
-#main-nav .open > a,
-html.no-touch #main-nav li > a:hover {
-  background-color: #1e67a5;
-  color: #eee;
-}
 .home #topics-bar {
   border-bottom: 0;
-}
-html.no-touch #main-nav li > a:hover .caret:before {
-  border-top: 6px solid #eee;
 }
 #secondary-nav #menu-dont-miss {
   padding-left: 10px;
@@ -125,14 +92,6 @@ body.normal.page .hero {
   margin: 0 auto;
   width: 70%;
 }
-.single-post article.post .sep {
-  display: none;
-}
-.single-post h2.subtitle {
-  font-size: 21px;
-  font-weight: normal;
-  color: #999;
-}
 .single-post .hero {
   background-color: #fff;
 }
@@ -165,27 +124,8 @@ p.wp-caption-text {
   margin: 5px 15px 10px 0;
 }
 
-/* Donate widget */
-.donate-btn .icon-heart { display: none; }
-.largo-donate a.btn {
-  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
-  background-color: #bd261d;
-  padding: 10px 17px;
-  font-size: 20px;
-  line-height: normal;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
-.largo-donate a.btn:hover {
-  background-color: #d32a20;
-}
-.largo-donate h3.widgettitle {
-  text-transform: none;
-  font-size: 18px;
-}
 #before-footer {
-  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  font-family: @sans;
   position: relative;
 }
 #before-footer .largo-donate {
@@ -205,7 +145,7 @@ p.wp-caption-text {
 }
 .single-post #before-footer .largo-donate { display: none; }
 .article-bottom .largo-donate {
-  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  font-family: @sans;
   text-align: center;
   margin: 0;
 }
@@ -218,7 +158,7 @@ p.wp-caption-text {
 
 /* About author box */
 span.author-posts-link {
-  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  font-family: @sans;
   font-size: 14px;
   font-weight: bold;
   float: right;
@@ -239,19 +179,6 @@ span.author-posts-link a:after {
   opacity: 1;
 }
 
-/* Widgets in secondary area, under homepage hero unit */
-#home-secondary .span12,
-#home-secondary .widget {
-  font-family: "ff-dagny-web-pro",Helvetica,Arial,sans-serif;
-  padding: 0;
-}
-#home-secondary .widget .widgettitle,
-#home-secondary .widget .widgettitle a,
-.widget.largo-series-posts h5.top-tag,
-.widget.largo-series-posts h5.top-tag a {
-  color: #999;
-  font-weight: normal;
-}
 #home-secondary .widget_sp_image a.widget_sp_image-image-link img {
   width: 100%;
 }
@@ -298,27 +225,6 @@ span.author-posts-link a:after {
 }
 
 /* Homepage list/river view */
-.view-list #view-format li {
-  border-right: 1px solid #777;
-}
-.stories article {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 26px;
-}
-.stories article p > a {
-  font-family: "ff-dagny-web-pro",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  display: inline-block;
-}
-.stories article img.attachment-post-thumbnail {
-  margin: 5px 15px 10px 0;
-}
-.stories .entry-content .byline {
-  margin-bottom: 12px;
-  font-weight: normal;
-  font-size: 13.04px;
-}
 
 /* footer */
 #site-footer ul,
@@ -381,7 +287,7 @@ span.author-posts-link a:after {
   font-weight: bold;
   margin-bottom: 8px;
   padding-bottom: 3px;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid @grey;
 }
 #site-footer .widget_nav_menu ul.sub-menu > li {
   font-size: 13.04px;
@@ -441,7 +347,7 @@ span.author-posts-link a:after {
 .secondary-featured-post {
   background-color: #fff;
   padding: 0 0 24px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @grey;
   margin-bottom: 24px;
 }
 .primary-featured-post .span8 h2.entry-title {
@@ -474,7 +380,7 @@ article img.attachment-post-thumbnail {
  * Paupress/Partner Downlaods
  */
 .paucontent-login a.button {
-  background-color: #333;
+  background-color: @grey;
   padding: 12px 24px;
   border-radius: 8px;
   -moz-border-radius: 8px;
@@ -727,7 +633,7 @@ article img.attachment-post-thumbnail {
   .archive .secondary-featured-post article {
     margin: 0 0 8px 0;
     padding: 0 0 8px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid @grey;
   }
   .archive .secondary-featured-post article:last-child {
     margin: 0;

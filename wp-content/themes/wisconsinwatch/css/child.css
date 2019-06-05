@@ -11,12 +11,6 @@ h6 {
   font-family: 'minion-pro', Georgia, serif;
   font-weight: 600;
 }
-a {
-  color: #0065a4;
-}
-a:hover {
-  color: #729eca;
-}
 h5.top-tag,
 h5.top-date,
 .sidebar2 h5,
@@ -48,38 +42,11 @@ h5.top-tag,
 h5.top-date {
   font-weight: 400;
 }
-h5.top-date {
-  font-style: italic;
-  color: #777;
-}
 .global-nav .nav-right .org-logo {
   margin-right: 0;
 }
-#main-nav {
-  margin-bottom: 0;
-}
-#main-nav .navbar-inner {
-  background-color: #fff;
-  padding-left: 0;
-  border-top: 2px solid #aaa;
-  border-bottom: 1px solid #aaa;
-}
-#main-nav li > a {
-  color: #0065a4;
-}
-#main-nav .caret:before {
-  border-top: 6px solid #0065a4;
-}
-#main-nav .open > a,
-html.no-touch #main-nav li > a:hover {
-  background-color: #1e67a5;
-  color: #eee;
-}
 .home #topics-bar {
   border-bottom: 0;
-}
-html.no-touch #main-nav li > a:hover .caret:before {
-  border-top: 6px solid #eee;
 }
 #secondary-nav #menu-dont-miss {
   padding-left: 10px;
@@ -130,14 +97,6 @@ body.normal.page .hero {
   margin: 0 auto;
   width: 70%;
 }
-.single-post article.post .sep {
-  display: none;
-}
-.single-post h2.subtitle {
-  font-size: 21px;
-  font-weight: normal;
-  color: #999;
-}
 .single-post .hero {
   background-color: #fff;
 }
@@ -166,27 +125,6 @@ p.wp-caption-text {
 }
 .article-bottom .largo-related-posts .wp-post-image {
   margin: 5px 15px 10px 0;
-}
-/* Donate widget */
-.donate-btn .icon-heart {
-  display: none;
-}
-.largo-donate a.btn {
-  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
-  background-color: #bd261d;
-  padding: 10px 17px;
-  font-size: 20px;
-  line-height: normal;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
-.largo-donate a.btn:hover {
-  background-color: #d32a20;
-}
-.largo-donate h3.widgettitle {
-  text-transform: none;
-  font-size: 18px;
 }
 #before-footer {
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
@@ -242,19 +180,6 @@ span.author-posts-link a:after {
   visibility: visible;
   opacity: 1;
 }
-/* Widgets in secondary area, under homepage hero unit */
-#home-secondary .span12,
-#home-secondary .widget {
-  font-family: "ff-dagny-web-pro", Helvetica, Arial, sans-serif;
-  padding: 0;
-}
-#home-secondary .widget .widgettitle,
-#home-secondary .widget .widgettitle a,
-.widget.largo-series-posts h5.top-tag,
-.widget.largo-series-posts h5.top-tag a {
-  color: #999;
-  font-weight: normal;
-}
 #home-secondary .widget_sp_image a.widget_sp_image-image-link img {
   width: 100%;
 }
@@ -300,27 +225,6 @@ span.author-posts-link a:after {
   letter-spacing: 0.025em;
 }
 /* Homepage list/river view */
-.view-list #view-format li {
-  border-right: 1px solid #777;
-}
-.stories article {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 26px;
-}
-.stories article p > a {
-  font-family: "ff-dagny-web-pro", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  display: inline-block;
-}
-.stories article img.attachment-post-thumbnail {
-  margin: 5px 15px 10px 0;
-}
-.stories .entry-content .byline {
-  margin-bottom: 12px;
-  font-weight: normal;
-  font-size: 13.04px;
-}
 /* footer */
 #site-footer ul,
 #site-footer p {
@@ -382,7 +286,7 @@ span.author-posts-link a:after {
   font-weight: bold;
   margin-bottom: 8px;
   padding-bottom: 3px;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #949599;
 }
 #site-footer .widget_nav_menu ul.sub-menu > li {
   font-size: 13.04px;
@@ -439,7 +343,7 @@ span.author-posts-link a:after {
 .secondary-featured-post {
   background-color: #fff;
   padding: 0 0 24px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #949599;
   margin-bottom: 24px;
 }
 .primary-featured-post .span8 h2.entry-title {
@@ -470,7 +374,7 @@ article img.attachment-post-thumbnail {
  * Paupress/Partner Downlaods
  */
 .paucontent-login a.button {
-  background-color: #333;
+  background-color: #949599;
   padding: 12px 24px;
   border-radius: 8px;
   -moz-border-radius: 8px;
@@ -707,7 +611,7 @@ article img.attachment-post-thumbnail {
   .archive .secondary-featured-post article {
     margin: 0 0 8px 0;
     padding: 0 0 8px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #949599;
   }
   .archive .secondary-featured-post article:last-child {
     margin: 0;
@@ -769,14 +673,14 @@ article img.attachment-post-thumbnail {
 #site-header p {
   display: block;
   font-size: 15px;
-  color: #7d7a7c;
+  color: #949599;
   margin: -14px 0 12px 28px;
 }
 #site-header h3 {
   font-size: 13px;
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #7EB4CF;
+  color: #3190ca;
   text-align: center;
   letter-spacing: 0.055em;
   text-transform: uppercase;
@@ -786,7 +690,7 @@ article img.attachment-post-thumbnail {
 }
 #site-header .newsletter-signup {
   width: 262px;
-  color: #666;
+  color: #949599;
   position: absolute;
   top: 25px;
   right: 0;
@@ -794,7 +698,7 @@ article img.attachment-post-thumbnail {
   z-index: 999;
 }
 #site-header .newsletter-signup .error {
-  color: #666;
+  color: #949599;
   font-size: 12px;
   display: none;
 }
@@ -838,7 +742,7 @@ article img.attachment-post-thumbnail {
   width: 226px;
 }
 #site-header .newsletter-signup form label {
-  color: #666;
+  color: #949599;
   font-size: 16px;
 }
 #site-header .newsletter-signup .toggleable {
@@ -848,6 +752,35 @@ article img.attachment-post-thumbnail {
   list-style: none;
   margin: 0;
 }
+#main-nav {
+  margin-bottom: 0;
+}
+#main-nav .caret:before {
+  border-top: 6px solid #3190ca;
+}
+#main-nav .open > a,
+html.no-touch #main-nav li > a:hover {
+  background-color: #3190ca;
+  color: white;
+}
+html.no-touch #main-nav li > a:hover .caret:before {
+  border-top: 6px solid white;
+}
+#main-nav li > a {
+  color: #3190ca;
+}
+#main-nav .navbar-inner {
+  background-color: #fff;
+  padding-left: 0;
+  border-top: 2px solid #949599;
+  border-bottom: 1px solid #949599;
+}
+.donate-btn .icon-heart {
+  display: none;
+}
+.donate-btn a:hover {
+  color: white;
+}
 .gform_wrapper.donation_form_wrapper .gfield_required,
 .gform_wrapper.donation_form_wrapper .ginput_product_price_label {
   display: none;
@@ -856,7 +789,7 @@ article img.attachment-post-thumbnail {
   font-size: 32px;
 }
 .gform_wrapper.donation_form_wrapper .gsection {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #949599;
 }
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
@@ -879,7 +812,7 @@ article img.attachment-post-thumbnail {
 .gform_wrapper.donation_form_wrapper .gform_next_button,
 .gform_wrapper.donation_form_wrapper .gform_previous_button {
   padding: 10px 36px;
-  background-color: #0065a4;
+  background-color: #3190ca;
   color: #fff;
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
   border: none;
@@ -959,14 +892,14 @@ article img.attachment-post-thumbnail {
 .gform_wrapper.donation_form_wrapper ul.gfield_radio li label {
   padding: 7px 24px;
   margin: 0;
-  background-color: #0065a4;
+  background-color: #3190ca;
   font-size: 18px;
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
   color: #fff;
 }
 .gform_wrapper.donation_form_wrapper ul.gfield_radio li label:hover {
   cursor: pointer;
-  background-color: #0084d7;
+  background-color: #58a6d6;
 }
 .gform_wrapper.donation_form_wrapper ul.gfield_radio li input[type=radio]:checked + label {
   background-color: #d32a20;
@@ -1075,10 +1008,10 @@ article img.attachment-post-thumbnail {
   font-weight: 700;
   margin-bottom: 8px;
   padding-bottom: 3px;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #949599;
 }
 .trust-indicators-modal-content h4 {
-  color: #999;
+  color: #949599;
   text-transform: uppercase;
   margin: 24px 0 4px;
   font-size: 15px;
@@ -1103,6 +1036,14 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
 .single-post .byline .edit-link:before {
   content: " | ";
 }
+.single-post article.post .sep {
+  display: none;
+}
+.single-post h2.subtitle {
+  font-size: 21px;
+  font-weight: normal;
+  color: #949599;
+}
 /*
  * Custom sidebar in post content
  */
@@ -1115,7 +1056,7 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
   margin-bottom: 24px;
 }
 .single-post .sidebar2 h5 {
-  color: #999;
+  color: #949599;
   text-transform: uppercase;
   margin-bottom: 4px;
   font-size: 15px;
@@ -1153,8 +1094,8 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
 @media only screen and (max-width: 420px) {
   .single-post .sidebar2 {
     max-width: 100%;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #949599;
+    border-bottom: 1px solid #949599;
     margin: 10px 0;
     padding: 24px 0 12px 0;
   }
@@ -1169,8 +1110,8 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
     float: none;
     margin: 10px 0;
     padding: 12px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #949599;
+    border-bottom: 1px solid #949599;
   }
 }
 @media print {
@@ -1178,11 +1119,76 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
     display: none;
   }
 }
-iframe {
-  max-width: 100% !important;
+/* Homepage list/river view */
+.view-list #view-format li {
+  border-right: 1px solid #949599;
+}
+.stories .entry-content .byline {
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-size: 13.04px;
+}
+.stories article {
+  border-bottom: 1px solid #949599;
+  margin-bottom: 26px;
+}
+.stories article img.attachment-post-thumbnail {
+  margin: 5px 15px 10px 0;
+}
+.stories article p > a {
+  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+#home-secondary {
+  /* Widgets in secondary area, under homepage hero unit */
 }
 #home-secondary .span4:nth-of-type(3) .largo-recent-posts h5 {
   font-weight: normal;
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+}
+#home-secondary .span12,
+#home-secondary .widget {
+  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  padding: 0;
+}
+#home-secondary .widget .widgettitle,
+#home-secondary #home-secondary .widget .widgettitle a,
+#home-secondary .widget.largo-series-posts h5.top-tag,
+#home-secondary .widget.largo-series-posts h5.top-tag a {
+  color: #949599;
+  font-weight: normal;
+}
+/* Donate widget */
+.largo-donate a.btn {
+  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
+  background-color: #d32a20;
+  padding: 10px 17px;
+  font-size: 20px;
+  line-height: normal;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.largo-donate a.btn:hover {
+  background-color: #e34c43;
+}
+.largo-donate h3.widgettitle {
+  text-transform: none;
+  font-size: 18px;
+}
+iframe {
+  max-width: 100% !important;
+}
+a {
+  color: #3190ca;
+}
+a:hover {
+  color: #2773a1;
+}
+h5.top-date {
+  font-style: italic;
+  color: #949599;
 }
 /*# sourceMappingURL=css/child.css.map */

@@ -19,14 +19,14 @@
   p {
     display: block;
     font-size: 15px;
-    color: #7d7a7c;
+    color: @grey;
     margin: -14px 0 12px 28px;
   }
   h3 {
     font-size: 13px;
     font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
     font-weight: normal;
-    color: #7EB4CF;
+    color: @blue;
     text-align: center;
     letter-spacing: 0.055em;
     text-transform: uppercase;
@@ -36,7 +36,7 @@
   }
   .newsletter-signup {
     width: 262px;
-    color: #666;
+    color: @grey;
     position: absolute;
     top: 25px;
     right: 0;
@@ -44,7 +44,7 @@
     z-index: 999;
 
     .error {
-      color: #666;
+      color: @grey;
       font-size: 12px;
       display: none;
     }
@@ -82,7 +82,7 @@
     form input[type="text"],
     form input[type="email"]{ width: 226px; }
     form label {
-      color: #666;
+      color: @grey;
       font-size: 16px;
     }
     .toggleable {
@@ -93,4 +93,33 @@
       margin: 0;
     }
   }
+}
+#main-nav {
+  margin-bottom: 0;
+
+  .caret:before {
+    border-top: 6px solid @blue;
+  }
+  .open > a,
+  html.no-touch & li > a:hover {
+    background-color: @blue;
+    color: white;
+  }
+  html.no-touch & li > a:hover .caret:before {
+    border-top: 6px solid white;
+  }
+
+  li > a {
+    color: @blue
+  }
+  .navbar-inner {
+    background-color: #fff;
+    padding-left: 0;
+    border-top: 2px solid @grey;
+    border-bottom: 1px solid @grey;
+  }
+}
+.donate-btn {
+  .icon-heart { display: none; }
+  a:hover { color: white; }
 }

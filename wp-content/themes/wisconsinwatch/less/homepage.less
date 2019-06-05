@@ -1,0 +1,48 @@
+/* Homepage list/river view */
+.view-list #view-format li {
+  border-right: 1px solid @grey;
+}
+.stories {
+  .entry-content .byline {
+    margin-bottom: 12px;
+    font-weight: normal;
+    font-size: 13.04px;
+  }
+  article {
+    border-bottom: 1px solid @grey;
+    margin-bottom: 26px;
+
+    img.attachment-post-thumbnail {
+      margin: 5px 15px 10px 0;
+    }
+
+    p > a {
+      font-family: @sans;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+}
+
+#home-secondary {
+  .span4:nth-of-type(3) {
+    .largo-recent-posts h5 {
+      font-weight: normal;
+      font-family: @sans;
+    }
+  }
+  /* Widgets in secondary area, under homepage hero unit */
+  .span12,
+  .widget {
+    font-family: @sans;
+    padding: 0;
+  }
+  .widget .widgettitle,
+  #home-secondary .widget .widgettitle a,
+  .widget.largo-series-posts h5.top-tag,
+  .widget.largo-series-posts h5.top-tag a {
+    color: @grey;
+    font-weight: normal;
+  }
+}

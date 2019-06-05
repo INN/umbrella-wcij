@@ -6,8 +6,18 @@
     display: none;
   }
 }
+
 .single-post .byline .edit-link:before {
   content: " | "
+}
+.single-post article.post .sep {
+  display: none;
+}
+
+.single-post h2.subtitle {
+  font-size: 21px;
+  font-weight: normal;
+  color: @grey;
 }
 
 /*
@@ -21,7 +31,7 @@
     margin-bottom: 24px;
   }
   h5 {
-    color: #999;
+    color: @grey;
     text-transform: uppercase;
     margin-bottom: 4px;
     font-size: 15px;
@@ -61,8 +71,8 @@
 @media only screen and (max-width: 420px) {
   .single-post .sidebar2 {
     max-width: 100%;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid @grey;
+    border-bottom: 1px solid @grey;
     margin: 10px 0;
     padding: 24px 0 12px 0;
     .item {
@@ -76,8 +86,8 @@
       float: none;
       margin: 10px 0;
       padding: 12px 0;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      border-top: 1px solid @grey;
+      border-bottom: 1px solid @grey;
     }
   }
 }
