@@ -45,7 +45,7 @@ function child_stylesheet() {
 		'wcij',
 		get_stylesheet_directory_uri() . '/css/child' . $suffix . '.css',
 		null,
-		filemtime( get_stylesheet_directory() . '/css/child.css' )
+		filemtime( get_stylesheet_directory() . '/css/child' . $suffix . '.css' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'child_stylesheet', 20 );
@@ -149,10 +149,6 @@ add_action( 'largo_header_before_largo_header', 'wcij_largo_header_before_largo_
  * @since Largo 0.5.5
  */
 function wcij_largo_header_after_largo_header() {
-	?>
-	<p itemprop="description">Produced by the <strong>Wisconsin Center for Investigative Journalism</strong></p>
-
-	<?php
 	if ( is_front_page() || is_home() ) {
 	?>
 	<div class="newsletter-signup">
