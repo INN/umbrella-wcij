@@ -1163,6 +1163,12 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
   color: #949599;
   font-weight: normal;
 }
+#home-secondary .widget .widgettitle a,
+#home-secondary #home-secondary .widget .widgettitle a a,
+#home-secondary .widget.largo-series-posts h5.top-tag a,
+#home-secondary .widget.largo-series-posts h5.top-tag a a {
+  color: #949599;
+}
 /* Donate widget */
 .largo-donate a.btn {
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
