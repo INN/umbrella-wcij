@@ -775,6 +775,9 @@ html.no-touch #main-nav li > a:hover .caret:before {
   border-top: 2px solid #949599;
   border-bottom: 1px solid #949599;
 }
+#sticky-nav li a {
+  color: #202020;
+}
 .donate-btn .icon-heart {
   display: none;
 }
@@ -1180,6 +1183,9 @@ div[data-overlay=policies] .trust-indicators-modal-wrapper .trust-indicators-mod
 }
 iframe {
   max-width: 100% !important;
+}
+body {
+  color: #202020;
 }
 a {
   color: #3190ca;
