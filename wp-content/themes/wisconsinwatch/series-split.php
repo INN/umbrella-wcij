@@ -46,7 +46,7 @@ $content_span = array( 'one-column' => 12, 'two-column' => 6, 'three-column' => 
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php
 		if ( $opt['show_series_byline'] )
-			echo '<h5 class="byline">' . largo_byline( false ) . '</h5>';
+			echo '<h5 class="byline">' . largo_byline( false , null, get_the_ID() ) . '</h5>';
 		if ( $opt['show_sharebar'] )
 			largo_post_social_links();
 		?>
