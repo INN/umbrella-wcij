@@ -85,7 +85,7 @@ function largo_child_enqueue() {
 		'largo-child',
 		get_stylesheet_directory_uri() . '/js/largo-child.js',
 		array('jquery'),
-		'20180207'
+		filemtime( get_stylesheet_directory() . '/js/largo-child.js' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'largo_child_enqueue' );
