@@ -35,6 +35,16 @@ function wcij_includes() {
 }
 add_action( 'after_setup_theme', 'wcij_includes', 10 ); // must run after function Largo() which runs with priority 10
 
+
+/**
+ * Enqueue editor styles
+ */
+function wcij_editor_styles() {
+	$suffix = ( LARGO_DEBUG )? '' : '.min';
+	add_editor_style( 'css/child' . $suffix . '.css' );
+}
+add_action( 'after_setup_theme', 'wcij_editor_styles', 15 ); // running at 15 so it comes after Gutenberg's styles
+
 /**
  * Include compiled style.css
  */

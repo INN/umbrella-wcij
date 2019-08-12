@@ -1,3 +1,7 @@
+/**
+ * variables in this file are extracted from legacy-css.less, but are not used there
+ * @since February 2017
+ */
 h5.top-tag,
 h5.top-date,
 .sidebar2 h5,
@@ -21,14 +25,19 @@ p.wp-media-credit,
 .widget p,
 .widget ul,
 .single-post .sidebar2 {
-  font-family: @sans;
+  font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
   letter-spacing: 0.035em;
 }
 body {
   font-family: 'freight-text-pro', Georgia, serif;
   font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'minion-pro', Georgia, serif;
   font-weight: 600;
 }
@@ -37,3 +46,4 @@ p.wp-caption-text,
 .wp-block-image figcaption {
   font-style: normal;
 }
+/*# sourceMappingURL=css/editor-styles.css.map */

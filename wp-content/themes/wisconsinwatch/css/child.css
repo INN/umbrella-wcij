@@ -1,16 +1,3 @@
-body {
-  font-family: 'freight-text-pro', Georgia, serif;
-  font-weight: 400;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'minion-pro', Georgia, serif;
-  font-weight: 600;
-}
 #dark-top {
   letter-spacing: 0.065em;
 }
@@ -75,11 +62,6 @@ body.normal.page .hero {
 }
 .single-post .hero {
   background-color: #fff;
-}
-p.intro,
-p.wp-caption-text,
-.wp-block-image figcaption {
-  font-style: normal;
 }
 .entry-content p.wp-media-credit {
   font-size: 13px;
@@ -654,6 +636,24 @@ p.wp-media-credit,
 .single-post .sidebar2 {
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
   letter-spacing: 0.035em;
+}
+body {
+  font-family: 'freight-text-pro', Georgia, serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'minion-pro', Georgia, serif;
+  font-weight: 600;
+}
+p.intro,
+p.wp-caption-text,
+.wp-block-image figcaption {
+  font-style: normal;
 }
 #site-header {
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
