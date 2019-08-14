@@ -10,6 +10,7 @@ module.exports = function(grunt) {
     
     var CSS_LESS_FILES = {
         'css/child.css': 'less/style.less',
+        'css/editor-styles.css': 'less/editor-styles.less'
     };
 
     grunt.initConfig({

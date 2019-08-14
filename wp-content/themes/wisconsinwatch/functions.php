@@ -35,6 +35,16 @@ function wcij_includes() {
 }
 add_action( 'after_setup_theme', 'wcij_includes', 10 ); // must run after function Largo() which runs with priority 10
 
+
+/**
+ * Enqueue editor styles
+ */
+function wcij_editor_styles() {
+	$suffix = ( LARGO_DEBUG )? '' : '.min';
+	add_editor_style( 'css/child' . $suffix . '.css' );
+}
+add_action( 'after_setup_theme', 'wcij_editor_styles', 15 ); // running at 15 so it comes after Gutenberg's styles
+
 /**
  * Include compiled style.css
  */
@@ -85,7 +95,7 @@ function largo_child_enqueue() {
 		'largo-child',
 		get_stylesheet_directory_uri() . '/js/largo-child.js',
 		array('jquery'),
-		'20180207'
+		filemtime( get_stylesheet_directory() . '/js/largo-child.js' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'largo_child_enqueue' );
