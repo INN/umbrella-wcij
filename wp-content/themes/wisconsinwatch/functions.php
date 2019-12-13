@@ -22,6 +22,7 @@ require_once( get_template_directory() . '/largo-apis.php' );
 function wcij_includes() {
 	$includes = array(
 		'/inc/custom-post-types.php',
+		'/inc/compat-republication-tracker-tool.php',
 		'/inc/metaboxes.php',
 		'/inc/donation-form.php',
 	);
