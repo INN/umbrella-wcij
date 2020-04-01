@@ -716,14 +716,16 @@ p.wp-caption-text,
 #site-header .newsletter-signup .date {
   float: left;
 }
-#site-header .newsletter-signup form {
+#site-header .newsletter-signup aside {
+  width: 100%;
+  box-sizing: border-box;
   clear: both;
   background: #fff;
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid #ddd;
 }
-#site-header .newsletter-signup form > label {
+#site-header .newsletter-signup aside > label {
   margin-bottom: 8px;
 }
 #site-header .newsletter-signup input {
