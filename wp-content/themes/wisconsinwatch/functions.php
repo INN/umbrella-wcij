@@ -81,7 +81,7 @@ function wcij_register_sidebars() {
 	register_sidebar( array(
 		'name' 			=> __( 'Header Newsletter Signup', 'wcij' ),
 		'id' 			=> 'header-newsletter-signup',
-		'description' 	=> __( 'A unique widget area for the bottom of blog posts (as opposed to articles)', 'largo' ),
+		'description' 	=> __( 'Displayed at the top of the homepage on desktop, and on no other pages.', 'largo' ),
 		'before_widget' => '<aside id="%1$s" class="%2$s clearfix">',
 		'after_widget' 	=> "</aside>",
 		'before_title' 	=> '<h3 class="widgettitle">',
