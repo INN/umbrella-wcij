@@ -695,7 +695,7 @@ p.wp-caption-text,
   width: 262px;
   color: #949599;
   position: absolute;
-  top: 25px;
+  bottom: 6px;
   right: 0;
   margin-left: 20px;
   z-index: 999;
