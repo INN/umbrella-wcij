@@ -713,6 +713,7 @@ p.wp-caption-text,
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid #ddd;
+  margin-bottom: 0;
 }
 #site-header .newsletter-signup aside > label {
   margin-bottom: 8px;
