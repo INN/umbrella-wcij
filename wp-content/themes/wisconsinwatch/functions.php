@@ -171,8 +171,6 @@ function wcij_largo_header_after_largo_header() {
 	if ( is_front_page() || is_home() ) {
 	?>
 	<div class="newsletter-signup">
-		<span class="date"><?php echo date('F j, Y', time()); ?></span>
-		<span class="city">Madison, Wisconsin</span>
 		<?php
 			dynamic_sidebar( 'header-newsletter-signup' );
 		?>

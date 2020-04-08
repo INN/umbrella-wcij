@@ -705,17 +705,6 @@ p.wp-caption-text,
   font-size: 12px;
   display: none;
 }
-#site-header .newsletter-signup .city,
-#site-header .newsletter-signup .date {
-  font-size: 14px;
-  margin-bottom: 2px;
-}
-#site-header .newsletter-signup .city {
-  float: right;
-}
-#site-header .newsletter-signup .date {
-  float: left;
-}
 #site-header .newsletter-signup aside {
   width: 100%;
   box-sizing: border-box;
@@ -727,6 +716,9 @@ p.wp-caption-text,
 }
 #site-header .newsletter-signup aside > label {
   margin-bottom: 8px;
+}
+#site-header .newsletter-signup .textwidget {
+  text-align: center;
 }
 #site-header .newsletter-signup input {
   font-family: 'ff-dagny-web-pro', Helvetica, Arial, sans-serif;
