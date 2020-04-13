@@ -78,6 +78,15 @@ function wcij_register_sidebars() {
 		'before_title' 	=> '<h3 class="widgettitle">',
 		'after_title' 	=> '</h3>',
 	) );
+	register_sidebar( array(
+		'name' 			=> __( 'Header Newsletter Signup', 'wcij' ),
+		'id' 			=> 'header-newsletter-signup',
+		'description' 	=> __( 'Displayed at the top of the homepage on desktop, and on no other pages.', 'largo' ),
+		'before_widget' => '<aside id="%1$s" class="%2$s clearfix">',
+		'after_widget' 	=> "</aside>",
+		'before_title' 	=> '<h3 class="widgettitle">',
+		'after_title' 	=> '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'wcij_register_sidebars' );
 
@@ -162,44 +171,9 @@ function wcij_largo_header_after_largo_header() {
 	if ( is_front_page() || is_home() ) {
 	?>
 	<div class="newsletter-signup">
-		<span class="date"><?php echo date('F j, Y', time()); ?></span>
-		<span class="city">Madison, Wisconsin</span>
-		<form action="https://wisconsinwatch.us4.list-manage.com/subscribe/post?u=91b0dfab9d494b66c92b76777&amp;id=d7ab6931a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			<label>Subscribe to our free newsletters</label>
-			<fieldset>
-				<input required type="email" value="" name="EMAIL" class="required email_address" id="mce-EMAIL" placeholder="Email address">
-				<input required type="text" value="" name="FNAME" class="required first_name toggleable" id="mce-FNAME" placeholder="First name">
-				<input required type="text" value="" name="LNAME" class="required last_name toggleable" id="mce-LNAME" placeholder="Last name">
-				<div id="interestTable" class="toggleable">
-					<div id="mergeRow-100-1" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
-						<div class="field-group groups">
-							<ul class="interestgroup_field checkbox-group">
-								<li class="!margin-bottom--lv2">
-									<label class="checkbox" for="group_1">
-										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_1" name="group[1][1]" value="1"  class="av-checkbox">
-										<span>Updates from WCIJ — Go behind the scenes with Executive Director Andy Hall.</span>
-									</label>
-								</li>
-								<li class="!margin-bottom--lv2">
-									<label class="checkbox" for="group_2">
-										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_2" name="group[1][2]" value="1"  class="av-checkbox">
-										<span>New story alerts — Be the first to know when we&#039;ve published a new major report.</span>
-									</label>
-								</li>
-								<li class="!margin-bottom--lv2">
-									<label class="checkbox" for="group_4">
-										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_4" name="group[1][4]" value="1"  class="av-checkbox">
-										<span>WisconsinWeekly — A roundup of the Wisconsin news you need to know.</span>
-									</label>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn submit toggleable">
-				<div class="error toggleable"></div>
-			</fieldset>
-		</form>
+		<?php
+			dynamic_sidebar( 'header-newsletter-signup' );
+		?>
 	</div>
 	<?php
 	}

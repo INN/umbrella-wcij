@@ -38,7 +38,7 @@
     width: 262px;
     color: @grey;
     position: absolute;
-    top: 25px;
+    bottom: 6px;
     right: 0;
     margin-left: 20px;
     z-index: 999;
@@ -48,22 +48,21 @@
       font-size: 12px;
       display: none;
     }
-    .city,
-    .date {
-      font-size: 14px;
-      margin-bottom: 2px;
-    }
-    .city { float: right; }
-    .date { float: left; }
-    form {
+    aside {
+      width: 100%;
+      box-sizing: border-box;
       clear: both;
       background: #fff;
       padding: 6px 12px;
       border-radius: 6px;
       border: 1px solid #ddd;
+      margin-bottom: 0;
       > label {
         margin-bottom: 8px;
       }
+    }
+    .textwidget {
+      text-align: center;
     }
     input {
       font-family: @sans;
